@@ -1,0 +1,28 @@
+.field-error {
+  font-size: 0.8rem;
+  color: var(--signal);
+  margin-top: 0.35rem;
+  min-height: 1.1em;
+}
+.field.invalid input, .field.invalid select, .field.invalid textarea {
+  border-color: var(--signal);
+}
+
+.form-success {
+  display: none;
+  margin-top: var(--space-3);
+  padding: 0.9rem 1.1rem;
+  border-radius: var(--radius-sm);
+  background: rgba(63,174,122,0.1);
+  border: 1px solid rgba(63,174,122,0.3);
+  color: var(--success);
+  font-size: 0.92rem;
+}
+.form-success.show { display: block; }
+
+.contact-side .card h3 { font-size: 1.05rem; }
+.contact-side .card p { font-size: 0.92rem; }
+
+@media (max-width: 700px) {
+  .contact-side { margin-top: var(--space-4); }
+}

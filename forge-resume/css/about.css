@@ -1,0 +1,15 @@
+.card-icon { font-family: var(--font-mono); font-weight: 600; font-size: 0.95rem; background: transparent; border: 1px solid var(--ink-line); }
+
+.person-card { text-align: center; }
+.person-avatar {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--white);
+  font-size: 1.1rem;
+  margin: 0 auto;
+}
+.person-card h3 { font-size: 1.05rem; }
+.person-card p { font-size: 0.85rem; margin: 0 auto; }

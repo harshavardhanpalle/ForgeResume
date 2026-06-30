@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Forge</title>
+<meta name="description" content="Get in touch with the Forge team." />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/copilot.css" />
+<link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">F</span>Forge</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Templates</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="login.html" class="btn btn-ghost btn-sm">Log in</a>
+      <a href="login.html" class="btn btn-primary btn-sm">Start building</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="eyebrow">Contact</div>
+    <h1 class="mt-2">Questions, feedback,<br/>or something broke?</h1>
+    <p class="lede mt-3">We read every message. Most replies go out within one business day.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container grid-2">
+    <div data-reveal>
+      <form id="contactForm" novalidate>
+        <div class="grid-2">
+          <div class="field">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" required />
+            <div class="field-error" data-error="firstName"></div>
+          </div>
+          <div class="field">
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="lastName" required />
+            <div class="field-error" data-error="lastName"></div>
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <div class="field-error" data-error="email"></div>
+        </div>
+        <div class="field">
+          <label for="topic">What's this about?</label>
+          <select id="topic" name="topic" required>
+            <option value="">Select a topic</option>
+            <option value="support">Account or billing support</option>
+            <option value="bug">Reporting a bug</option>
+            <option value="feature">Feature request</option>
+            <option value="press">Press or partnership</option>
+            <option value="other">Something else</option>
+          </select>
+          <div class="field-error" data-error="topic"></div>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <div class="field-error" data-error="message"></div>
+        </div>
+        <div class="checkbox-row field">
+          <input type="checkbox" id="updates" name="updates" />
+          <label for="updates">Send me occasional product updates. No spam.</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <div class="form-success" id="formSuccess">
+          <strong>Message sent.</strong> We'll get back to you at the email you provided.
+        </div>
+      </form>
+    </div>
+
+    <div class="contact-side" data-reveal>
+      <div class="card">
+        <h3>Support</h3>
+        <p class="mt-2">For account or billing issues, include the email address on your account so we can find it faster.</p>
+        <p class="mt-2" style="color:var(--paper)">support@forge.example</p>
+      </div>
+      <div class="card mt-3">
+        <h3>Press &amp; partnerships</h3>
+        <p class="mt-2">For media inquiries or integration partnerships.</p>
+        <p class="mt-2" style="color:var(--paper)">press@forge.example</p>
+      </div>
+      <div class="card mt-3">
+        <h3>Response time</h3>
+        <p class="mt-2">Most messages get a reply within one business day. Bug reports with steps to reproduce get prioritized.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="brand"><span class="brand-mark">F</span>Forge</a>
+        <p class="mt-3">A resume builder that scores you against the job, not against a generic checklist.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="services.html">Templates</a>
+        <a href="services.html">ATS scoring</a>
+        <a href="login.html">Sign up</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <a href="login.html">Log in</a>
+        <a href="login.html">Create account</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Forge. All rights reserved.</span>
+      <span>Built for demonstration purposes.</span>
+    </div>
+  </div>
+</footer>
+
+<div id="copilot-root"></div>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

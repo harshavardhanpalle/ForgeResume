@@ -1,0 +1,20 @@
+.tpl-filter {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.filter-chip {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid var(--ink-line);
+  font-size: 0.86rem;
+  color: var(--steel);
+  transition: all 0.15s ease;
+}
+.filter-chip:hover { border-color: var(--steel); color: var(--paper); }
+.filter-chip.active { background: var(--signal); border-color: var(--signal); color: var(--white); }
+
+.tpl-card { display: block; padding: var(--space-3); border-radius: var(--radius-md); border: 1px solid var(--ink-line); transition: border-color 0.2s ease, transform 0.2s ease; }
+.tpl-card:hover { border-color: #3D4654; transform: translateY(-3px); }
+.tpl-card p { font-size: 0.92rem; }
+.tpl-card.hidden { display: none; }

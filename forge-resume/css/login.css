@@ -1,0 +1,82 @@
+.login-body { background: var(--ink); }
+
+.auth-wrap {
+  min-height: calc(100vh - 73px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-5) var(--space-3);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  background: var(--ink-soft);
+  border: 1px solid var(--ink-line);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  position: relative;
+}
+
+.auth-tabs {
+  display: flex;
+  gap: 0.4rem;
+  background: var(--ink);
+  border-radius: var(--radius-sm);
+  padding: 0.3rem;
+  margin-bottom: var(--space-4);
+}
+.auth-tab {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--steel);
+  transition: all 0.18s ease;
+}
+.auth-tab.active { background: var(--signal); color: var(--white); }
+
+.auth-panel { display: none; }
+.auth-panel.active { display: block; }
+.auth-panel h2 { font-size: 1.5rem; }
+.auth-panel p { font-size: 0.92rem; }
+
+.auth-submit { width: 100%; justify-content: center; margin-top: var(--space-2); }
+
+.auth-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+.auth-link { font-size: 0.85rem; color: var(--steel); }
+.auth-link:hover { color: var(--paper); }
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: var(--space-4) 0 var(--space-3);
+  color: var(--steel-dim);
+  font-size: 0.8rem;
+}
+.auth-divider::before, .auth-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--ink-line);
+}
+.auth-divider span { padding: 0 0.8rem; }
+
+.auth-social { display: flex; gap: 0.6rem; }
+.auth-social .btn { flex: 1; justify-content: center; }
+
+.auth-success {
+  display: none;
+  text-align: center;
+  padding: var(--space-3) 0;
+}
+.auth-success.show { display: block; }
+.auth-success strong { font-family: var(--font-display); font-size: 1.3rem; color: var(--white); display: block; margin-bottom: 0.6rem; }
+.auth-success p { font-size: 0.92rem; margin: 0 auto; }

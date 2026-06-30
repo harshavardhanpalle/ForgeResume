@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Templates &amp; Features — Forge</title>
+<meta name="description" content="Browse Forge's resume templates and see how ATS scoring, AI editing, and export work." />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/copilot.css" />
+<link rel="stylesheet" href="css/home.css" />
+<link rel="stylesheet" href="css/services.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">F</span>Forge</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Templates</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="login.html" class="btn btn-ghost btn-sm">Log in</a>
+      <a href="login.html" class="btn btn-primary btn-sm">Start building</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="eyebrow">Templates &amp; Features</div>
+    <h1 class="mt-2">Three layouts.<br/>One scoring engine underneath.</h1>
+    <p class="lede mt-3">Pick a template by industry, then let Forge tell you what's missing for the specific job you want.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="tpl-filter" data-reveal>
+      <button class="filter-chip active" data-filter="all">All</button>
+      <button class="filter-chip" data-filter="tech">Tech &amp; Design</button>
+      <button class="filter-chip" data-filter="leadership">Leadership</button>
+      <button class="filter-chip" data-filter="traditional">Traditional</button>
+    </div>
+
+    <div class="grid-3 mt-4" id="tplGrid">
+      <a href="login.html" class="tpl-card" data-category="tech" data-reveal>
+        <div class="tpl-thumb tpl-minimal"><div></div><div></div><div></div></div>
+        <h3 class="mt-3">Minimal</h3>
+        <p class="mt-1">Single column, generous whitespace. Built for engineering, design, and product roles.</p>
+        <span class="tag mt-2">ATS-optimized</span>
+      </a>
+      <a href="login.html" class="tpl-card" data-category="leadership" data-reveal>
+        <div class="tpl-thumb tpl-exec"><div></div><div></div><div></div></div>
+        <h3 class="mt-3">Executive</h3>
+        <p class="mt-1">Stronger hierarchy and a summary-first layout. Built for leadership and management tracks.</p>
+        <span class="tag mt-2">ATS-optimized</span>
+      </a>
+      <a href="login.html" class="tpl-card" data-category="traditional" data-reveal>
+        <div class="tpl-thumb tpl-classic"><div></div><div></div><div></div></div>
+        <h3 class="mt-3">Classic</h3>
+        <p class="mt-1">Centered header, conservative spacing. Built for finance, law, and academic applications.</p>
+        <span class="tag mt-2">ATS-optimized</span>
+      </a>
+      <a href="login.html" class="tpl-card" data-category="tech" data-reveal>
+        <div class="tpl-thumb tpl-minimal"><div></div><div></div><div></div></div>
+        <h3 class="mt-3">Compact</h3>
+        <p class="mt-1">Two-column variant of Minimal for candidates with longer histories who still need one page.</p>
+        <span class="tag mt-2">ATS-optimized</span>
+      </a>
+      <a href="login.html" class="tpl-card" data-category="leadership" data-reveal>
+        <div class="tpl-thumb tpl-exec"><div></div><div></div><div></div></div>
+        <h3 class="mt-3">Board Brief</h3>
+        <p class="mt-1">Leads with a metrics summary band. Built for VP and C-suite applications.</p>
+        <span class="tag mt-2">ATS-optimized</span>
+      </a>
+      <a href="login.html" class="tpl-card" data-category="traditional" data-reveal>
+        <div class="tpl-thumb tpl-classic"><div></div><div></div><div></div></div>
+        <h3 class="mt-3">Academic CV</h3>
+        <p class="mt-1">Extended layout supporting publications, grants, and teaching history sections.</p>
+        <span class="tag mt-2">ATS-optimized</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">How scoring works</div>
+      <h2>Three signals, one score</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card" data-reveal>
+        <h3>Keyword match</h3>
+        <p class="mt-2">Forge extracts the skills and tools named in the job description and checks which ones appear in your resume — and where.</p>
+      </div>
+      <div class="card" data-reveal>
+        <h3>Structure check</h3>
+        <p class="mt-2">Missing dates, unclear job titles, or sections out of expected order all reduce how reliably an ATS can parse your resume.</p>
+      </div>
+      <div class="card" data-reveal>
+        <h3>Impact density</h3>
+        <p class="mt-2">Forge counts how many of your bullet points include a measurable result, and flags the ones that don't.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="container cta-band-inner">
+    <h2>Pick a template and see your score in real time.</h2>
+    <a href="login.html" class="btn btn-light mt-4">Start building free</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="brand"><span class="brand-mark">F</span>Forge</a>
+        <p class="mt-3">A resume builder that scores you against the job, not against a generic checklist.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="services.html">Templates</a>
+        <a href="services.html">ATS scoring</a>
+        <a href="login.html">Sign up</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <a href="login.html">Log in</a>
+        <a href="login.html">Create account</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Forge. All rights reserved.</span>
+      <span>Built for demonstration purposes.</span>
+    </div>
+  </div>
+</footer>
+
+<div id="copilot-root"></div>
+
+<script src="js/main.js"></script>
+<script src="js/services.js"></script>
+</body>
+</html>
